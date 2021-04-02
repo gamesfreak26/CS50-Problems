@@ -28,14 +28,22 @@ int main(void) {
     }
     while (usr_inputted_height < 1 || usr_inputted_height > 8);
 
-    int whitespace = usr_inputted_height - 1;
+    
     // Iterate through numbers until we hit the number inputted.
-    for (int row = 1; row <= usr_inputted_height; row++) {
+    for (int row = 0; row < usr_inputted_height; row++) {
+
+        int whitespace = usr_inputted_height - row;
+
         // Iterate through the columns and print out a left-aligned pyramid.
-        for (int i = whitespace; i > 0 ; i--) {
-            printf("*");
+        for (int column = 0; column < usr_inputted_height ; column++) {
+            if (column > row - 1) {
+                printf("#");
+            }
+            else {
+                printf("*");
+            }
         }
         whitespace--;   
-        printf("#\n");
+        printf("\n");
     }
 }
