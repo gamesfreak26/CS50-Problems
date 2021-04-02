@@ -2,7 +2,7 @@
 
 These are my attempts at the CS50 Problems.  You can find the OpenCourseWare notes [here](https://cs50.harvard.edu/x/2021/)
 
-C is not a language that I'm fully comfortable with.  Feel free to reach out if you 
+C is not a language that I'm fully comfortable with.  Feel free to reach out if you feel I can complete these problems better.  
 
 ## Problems attempted
 
