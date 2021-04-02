@@ -38,6 +38,9 @@ int main(void) {
             if (column < row + 2) {
                 printf("#");
             }
+            // else if ((column - usr_inputted_height) * -1) {
+
+            // }
             else {
                 printf(" ");
             }
