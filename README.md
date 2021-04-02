@@ -9,7 +9,8 @@ C is not a language that I'm fully comfortable with.  Feel free to reach out if 
 ### Week 1
 1. hello: https://cs50.harvard.edu/x/2021/labs/1/hello/
 1. population: https://cs50.harvard.edu/x/2021/labs/1/population/
-1. mario1 (currently attempting): https://cs50.harvard.edu/x/2021/psets/1/mario/less/
+1. mario1: https://cs50.harvard.edu/x/2021/psets/1/mario/less/
+1. mario2 (currently attempting): https://cs50.harvard.edu/x/2021/psets/1/mario/more/
 
 ## Installation
 There is a custom library you need to install called cs50.h.  You can find the installation instructions [here](https://cs50.readthedocs.io/libraries/cs50/c/)
