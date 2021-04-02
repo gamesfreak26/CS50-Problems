@@ -24,21 +24,20 @@ int main(void) {
     int user_input;
     do {
         // Get user input for how high the pyramid is.
-        user_input = get_int("How high did you want the pyramid?\n");
+        user_input = get_int("How high did you want the pyramid?");
     }
     while (user_input < 1 || user_input > 8);
 
     // Iterate through numbers until we hit the number inputted.       
-    for (int i = 0; i < user_input; i++) { 
+    for (int i = 1; i <= user_input; i++) { 
         int whitespace = 0; 
         // Subtract the line number from the user inputted height to get whitespace.  
-        whitespace = user_input - ( i + 1 );
+        whitespace = user_input - i;
         // Print out the white space and then the hashes.  
         string line = "";
-        for (int j = 0; i < whitespace; i++) {
+        for (int j = 1; j <= whitespace; j++) {
             printf("*");
         }
         printf("#\n");
     }
-
 }
