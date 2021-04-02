@@ -32,18 +32,16 @@ int main(void) {
     // Iterate through numbers until we hit the number inputted.
     for (int row = 0; row < usr_inputted_height; row++) {
 
-        int whitespace = usr_inputted_height - row;
-
-        // Iterate through the columns and print out a left-aligned pyramid.
-        for (int column = 0; column < usr_inputted_height ; column++) {
-            if (column > row - 1) {
+        // Iterate through the columns 
+        for (int column = usr_inputted_height; column > 0 ; column--) {
+            
+            if (column < row + 2) {
                 printf("#");
             }
             else {
-                printf("*");
+                printf(" ");
             }
         }
-        whitespace--;   
         printf("\n");
     }
 }
