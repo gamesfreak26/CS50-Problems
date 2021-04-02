@@ -24,16 +24,23 @@ int main(void) {
     int usr_inputted_height;
     do {
         // Get user input for how high the pyramid is.
-        usr_inputted_height = get_int("How high did you want the pyramid?");
+        usr_inputted_height = get_int("How high did you want the pyramid? ");
     }
     while (usr_inputted_height < 1 || usr_inputted_height > 8);
 
-    // Iterate through numbers until we hit the number inputted.       
-    for (int row = 1; row <= usr_inputted_height; row++) { 
-        int column; 
+    int whitespace = usr_inputted_height - 1;
+
+    // Iterate through numbers until we hit the number inputted.
+    for (int row = 1; row <= usr_inputted_height; row++) {
+        // Iterate through the columns and print out a left-aligned pyramid.
+        for (int i = whitespace; i > 0 ; i--) {
+            printf("*");
+            whitespace--;
+        }
         for (int column = 0; column < row; column++) {
             printf("#");
         }
+        
         printf("\n");
     }
 }
